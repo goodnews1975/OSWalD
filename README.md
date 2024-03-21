@@ -13,8 +13,16 @@ If this check is ok, an **green LED** near the Off-Switch indicates all is ok.
 
 If this check fails, an **red LED** blinks, also there is a **display** which shows a message like "Please close the window in the main entrance"
 
+The Logic will be implemented in the **Home Automation Unit**. OSWaLD will connect over built-in WIFI
+Communication over MQTT. 
+
 ## Contents of OSWaLD
 - Microcontroller
   - Raspberry Pi Pico WH
     - with WLAN
-    - 
+- Push-Button
+- green LED
+- red LED
+- Display for Messages 
+
+
