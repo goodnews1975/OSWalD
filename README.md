@@ -9,7 +9,7 @@ When I leave the building, I push the **OFF-Button**.
 
 **OSWaLD** sends this request to the Automation Unit of the building. The Automation Unit checks if there is any window open.
 
-If this check is ok, an **green LED** near the Off-Switch indicates all is ok.
+If this check is ok, an **green LED** near the Off-Switch indicates all is ok. This is the signal for the **Home Automation Unit** that all lights can be shut off.
 
 If this check fails, an **red LED** blinks, also there is a **display** which shows a message like "Please close the window in the main entrance"
 
