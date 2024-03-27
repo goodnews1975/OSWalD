@@ -28,14 +28,25 @@ This Project is in progress...
 - green LED
 - red LED
 - Display for Messages
+## V02: Adding Push-Button, starting firmware
+### Hardware
+
+![schematic](schematics/OSWaLD_schematics_v02_Schaltplan.png)
+![breadboard](schematics/OSWaLD_schematics_v02_Steckplatine.png)
 
 ## V01: Raspberry Pico with SSD1306 Display
+
 ### Hardware
+
 ![schematic](schematics/OSWaLD_schematics_v01_Schaltplan.png)
 ![breadboard](schematics/OSWaLD_schematics_v01_Steckplatine.png)
 
-### Software 
-#### Library ssd1306.py
-#### Testprogram temperature.py
-- works fine
+### Software
 
+#### Library ssd1306.py
+
+* have to be copied to the Pico
+
+#### Testprogram temperature.py
+
+- works fine
