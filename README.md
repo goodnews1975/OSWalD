@@ -34,6 +34,12 @@ This Project is in progress...
 ![schematic](schematics/OSWaLD_schematics_v02_Schaltplan.png)
 ![breadboard](schematics/OSWaLD_schematics_v02_Steckplatine.png)
 
+### Software
+#### Main Program main.py
+ 
+#### Library ssd1306.py
+* have to be copied to the Pico
+
 ## V01: Raspberry Pico with SSD1306 Display
 
 ### Hardware
