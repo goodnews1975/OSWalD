@@ -30,5 +30,12 @@ This Project is in progress...
 - Display for Messages
 
 ## V01: Raspberry Pico with SSD1306 Display
+### Hardware
 ![schematic](schematics/OSWaLD_schematics_v01_Schaltplan.png)
 ![breadboard](schematics/OSWaLD_schematics_v01_Steckplatine.png)
+
+### Software 
+#### Library ssd1306.py
+#### Testprogram temperature.py
+- works fine
+
