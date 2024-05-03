@@ -1,0 +1,9 @@
+"""
+settings.py
+Please adjust the values for your setting
+"""
+
+
+wlan_name = 'XXXXXXXXXXXX'
+wlan_secret = 'XXXXXXXXXXXX'
+COUNTRY = 'DE'
