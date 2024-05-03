@@ -31,11 +31,14 @@ def display_clear():
 # Status-LED
 led_onboard = machine.Pin('LED', machine.Pin.OUT, value=0)
 
-# Funktion: WLAN-Verbindung
+# Function Wlan-Connection
 def wlanConnect(wlanSSID, wlanPW):
     wlan = network.WLAN(network.STA_IF)
     if not wlan.isconnected():
         print('WLAN-Verbindung herstellen:', wlanSSID)
+        display_clear()
+        display.text("Try to connect", 0,0)
+        display.show()
         wlan.active(True)
         wlan.connect(wlanSSID, wlanPW)
         for i in range(10):
@@ -50,13 +53,26 @@ def wlanConnect(wlanSSID, wlanPW):
         print('WLAN-Status:', wlan.status())
         netConfig = wlan.ifconfig()
         print('IPv4-Adresse:', netConfig[0], '/', netConfig[1])
+        display_clear()
+        display.text(netConfig[0]+ '/'+ netConfig[1], 0, 14 )
+        display.text(netConfig[1], 0, 28 )
+        display.show()
         print('Standard-Gateway:', netConfig[2])
         print('DNS-Server:', netConfig[3])
+        return True
     else:
         print('Keine WLAN-Verbindung')
         led_onboard.off()
         print('WLAN-Status:', wlan.status())
+        return False
 
 
 # WLAN-Verbindung herstellen
-wlanConnect(wlan_name, wlan_secret)
+if wlanConnect(wlan_name, wlan_secret):
+    print("Got it....")
+    display.text("WLAN is connected",0,0)
+else:
+    display.text("Something went wrong",0,0)
+display.show();
+
+
