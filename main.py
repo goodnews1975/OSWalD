@@ -4,7 +4,7 @@ Main Program
 """
 
 # Load Settings
-from settings import wlan_name, wlan_secret, COUNTRY
+from settings import wlan_name, wlan_secret, COUNTRY, mqtt_broker, mqtt_client, mqtt_user, mqtt_pw
  
 
 # Load Library
